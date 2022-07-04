@@ -1,0 +1,55 @@
+@@include("partials/main.html")
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Techwind"})
+
+    <!-- Css -->
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <link href="assets/libs/choices.js/public/assets/styles/choices.min.css" rel="stylesheet">
+    @@include("partials/head-css.html")
+</head>
+
+<body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
+    <!-- Loader Start -->
+    <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Loader End -->
+
+    @@include("partials/navbar/nav-center-white-bg.html")
+    @@include("content/home/first-view.html")
+    @@include("content/home/footer-first-view.html")
+    @@include("content/home/categories.html")
+    @@include("content/home/projects.html")
+    @@include("partials/footer/footer-contact.html")
+
+    @@include("partials/footer/footer-two.html")
+    @@include("partials/cookies.html")
+
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top"
+        class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center bg-emerald-600 text-white leading-9"><i
+            class="uil uil-arrow-up"></i></a>
+    <!-- Back to top -->
+
+    @@include("partials/switcher.html")
+
+    <!-- JAVASCRIPTS -->
+    <script src="assets/libs/shufflejs/shuffle.min.js"></script>
+    <script src="assets/libs/tobii/js/tobii.min.js"></script>
+    <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+    <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="assets/libs/js-datepicker/datepicker.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    @@include("partials/script-file.html")
+    <!-- JAVASCRIPTS -->
+</body>
+
+</html>

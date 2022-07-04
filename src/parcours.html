@@ -1,0 +1,128 @@
+@@include("partials/main.html")
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Techwind"})
+
+    <!-- Css -->
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    @@include("partials/head-css.html")
+</head>
+
+<body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
+    <!-- Loader Start -->
+    <!-- <div id="preloader">
+                <div id="status">
+                    <div class="spinner">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
+            </div> -->
+    <!-- Loader End -->
+
+    @@include("partials/navbar/nav-center-white-bg.html")
+
+    <!-- Start Hero -->
+    <section
+        class="md:h-screen95 py-36 h-auto relative flex items-center background-effect overflow-hidden 
+            before:content-[''] before:absolute before:-z-1 sm:before:-bottom-80 before:-bottom-40 before:right-36 before:left-0 before:mx-auto before:rounded-full before:bg-emerald-600 sm:before:w-[50rem] before:w-[30rem] sm:before:h-[50rem] before:h-[30rem]">
+        <div class="container-fluid">
+            <!-- <div class="absolute inset-0" data-jarallax='{"speed": 0.5}'
+                style="background: url('assets/images/personal/hero-overlay.png') top center;"></div> -->
+        </div>
+
+        <div class="container relative z-1">
+            <div class="grid grid-cols-1 mt-5">
+                <div class="title-heading">
+                    <div class="grid md:grid-cols-12 mt-12">
+                        <div class="lg:col-span-4 md:col-span-6 order-2 lg:order-1 mt-6 md:mt-0 relative">
+                            <div
+                                class="rounded-md lg:shadow-md lg:dark:shadow-gray-700 lg:absolute lg:top-14 lg:bg-white lg:dark:bg-slate-900 lg:p-6">
+                                <h5 class="mb-3 text-2xl font-bold lg:text-black lg:dark:text-white text-white">Je suis
+                                    un développeur web</h5>
+
+                                <p class="para-desc lg:text-slate-400 text-slate-200 dark:text-slate-200 mb-0">Mais je
+                                    souhaite me former à l'UX Design pour parfaire mon expertise.</p>
+
+                                <div class="mt-4">
+                                    <a href="#portfolio"
+                                        class="btn bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white rounded-md">Plus
+                                        d'informations</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+
+                        <div class="lg:col-span-4 lg:block hidden lg:order-2"></div>
+
+                        <div class="lg:col-span-4 md:col-span-6 order-1 lg:order-3">
+                            <!-- <h4
+                                class="lg:text-[64px] lg:leading-[1.1] text-[40px] font-bold lg:text-black lg:dark:text-white text-white mb-0">
+                                Bastien <br> C<span class="typewrite" data-period="2000"
+                                    data-type='[ "hantrel!"]'></span>
+                            </h4> -->
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end grid-->
+                </div>
+            </div>
+            <!--end grid-->
+        </div>
+        <!--end container-->
+
+        <div
+            class="absolute inset-0 bg-gradient-to-b lg:from-emerald-600/5 lg:to-emerald-600/20 from-emerald-600/10 to-emerald-600 lg:-z-2">
+        </div>
+        <ul class="circles p-0 mb-0">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    <!--end section-->
+    <div class="relative">
+        <div class="absolute block w-full h-auto bottom-[25px] z-1 left-0">
+            <a href="#about"><i
+                    class="mdi mdi-arrow-down absolute top-0 left-0 right-0 text-center inline-flex items-center justify-center rounded-full bg-white dark:bg-slate-900 h-12 w-12 mx-auto shadow-md dark:shadow-gray-700"></i></a>
+        </div>
+
+        <div class="shape overflow-hidden text-white dark:text-slate-900">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
+
+    @@include("content/parcours/skills.html")
+    @@include("content/parcours/timeline.html")
+    @@include("content/parcours/soft-skill.html")
+
+    @@include("partials/footer/footer-two.html")
+
+    @@include("partials/cookies.html")
+
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top"
+        class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center bg-emerald-600 text-white leading-9"><i
+            class="uil uil-arrow-up"></i></a>
+    <!-- Back to top -->
+
+    @@include("partials/switcher.html")
+
+    <!-- JAVASCRIPTS -->
+    <script src="assets/libs/tobii/js/tobii.min.js"></script>
+    <script src="assets/libs/jarallax/jarallax.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    @@include("partials/script-file.html")
+    <!-- JAVASCRIPTS -->
+</body>
+
+</html>

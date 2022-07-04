@@ -1,0 +1,205 @@
+@@include("partials/main.html")
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Techwind"})
+
+    <!-- Css -->
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    @@include("partials/head-css.html")
+</head>
+
+<body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
+    <!-- Loader Start -->
+    <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Loader End -->
+
+    @@include("partials/navbar/nav-center-white-bg.html")
+
+    <!-- Start Hero -->
+    <section
+        class="relative table w-full py-36 bg-[url('../../assets/images/company/aboutus.jpg')] bg-center bg-no-repeat">
+        <div class="absolute inset-0 bg-emerald-800 opacity-50"></div>
+        <div class="container">
+            <div class="grid grid-cols-1 pb-8 text-center mt-10">
+                <h1 class="font-bold md:text-6xl text-5xl md:leading-normal tracking-wide leading-normal  text-white">
+                    Me contacter</h1>
+            </div>
+            <!--end grid-->
+        </div>
+        <!--end container-->
+
+    </section>
+    <!--end section-->
+    <div class="relative">
+        <div class="shape overflow-hidden z-1 text-white dark:text-slate-900">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- Start Section-->
+    <section class="relative md:py-24 py-16">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
+                <div class="text-center px-6 mt-6">
+                    <div
+                        class="w-20 h-20 bg-emerald-600/5 text-emerald-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-700 mx-auto">
+                        <i class="uil uil-linkedin"></i>
+                    </div>
+
+                    <div class="content mt-7">
+                        <h5 class="title h5 text-xl font-medium">Linkedin</h5>
+                        <p class="text-slate-400 mt-3">Je ne poste pas sur ce réseau,<br />mais je consulte mon profil
+                            réguilèrement.</p>
+
+                        <div class="mt-5">
+                            <a target="_blank" rel="noopenner noreferrer"
+                                href="https://www.linkedin.com/in/bastien-chantrel/"
+                                class="btn btn-link text-emerald-600 hover:text-emerald-600 after:bg-emerald-600 duration-500 ease-in-out">Profil
+                                Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center px-6 mt-6">
+                    <div
+                        class="w-20 h-20 bg-emerald-600/5 text-emerald-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-700 mx-auto">
+                        <i class="uil uil-envelope"></i>
+                    </div>
+
+                    <div class="content mt-7">
+                        <h5 class="title h5 text-xl font-medium">Email</h5>
+                        <p class="text-slate-400 mt-3">Vous pouvez me contacter par mail, <br />je vous répondrais
+                            rapidement. </p>
+
+                        <div class="mt-5">
+                            <a target="_blank" rel="noopenner noreferrer" href="mailto:bastien.chantrel.pro@gmail.com"
+                                class="btn btn-link text-emerald-600 hover:text-emerald-600 after:bg-emerald-600 duration-500 ease-in-out">bastien.chantrel.pro@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center px-6 mt-6">
+                    <div
+                        class="w-20 h-20 bg-emerald-600/5 text-emerald-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-700 mx-auto">
+                        <i class="uil uil-cog"></i>
+                    </div>
+
+                    <div class="content mt-7">
+                        <h5 class="title h5 text-xl font-medium">Par mon entreprise</h5>
+                        <p class="text-slate-400 mt-3">Un projet ? <br />
+                            L'agence où je travaille peux s'en charger.</p>
+
+                        <div class="mt-5">
+                            <a target="_blank" rel="noopenner noreferrer" href="https://www.kienso.fr/contact/"
+                                data-type="iframe"
+                                class="video-play-icon read-more lightbox btn btn-link text-emerald-600 hover:text-emerald-600 after:bg-emerald-600 duration-500 ease-in-out">Les
+                                contacter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end grid-->
+        </div>
+        <!--end container-->
+
+        <div class="container md:mt-24 mt-16">
+            <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+                <div class="lg:col-span-4 md:col-span-6">
+                    <img src="./assets/images/contact.png" alt="">
+                </div>
+
+                <div class="lg:col-span-8 md:col-span-6 mt-8 md:mt-0">
+                    <div class="lg:ml-5">
+                        <div class="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-700 p-6">
+                            <h3 class="mb-6 text-2xl leading-normal font-medium">Ou bien avec ce formulaire !</h3>
+
+                            <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+                                <p class="mb-0" id="error-msg"></p>
+                                <div id="simple-msg"></div>
+                                <div class="grid lg:grid-cols-12 lg:gap-6">
+                                    <div class="lg:col-span-6 mb-5">
+                                        <div class="text-left">
+                                            <label for="name" class="font-semibold">Un nom:
+                                            </label>
+                                            <div class="text-xs text-slate-400 ">Pour savoir qui vous êtes</div>
+                                            <div class="form-icon relative mt-2">
+                                                <i data-feather="user" class="w-4 h-4 absolute top-3 left-4"></i>
+                                                <input name="name" id="name" type="text" class="form-input pl-11"
+                                                    placeholder="Votre nom">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="lg:col-span-6 mb-5">
+                                        <div class="text-left">
+                                            <label for="email" class="font-semibold">Un e-mail: </label>
+                                            <div class="text-xs text-slate-400 ">Pour vous recontacter</div>
+
+                                            <div class="form-icon relative mt-2">
+                                                <i data-feather="mail" class="w-4 h-4 absolute top-3 left-4"></i>
+                                                <input name="email" id="email" type="email" class="form-input pl-11"
+                                                    placeholder="exemple@mail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="mb-5">
+                                    <div class="text-left">
+                                        <label for="comments" class="font-semibold">Votre message:</label>
+                                        <div class="text-xs text-slate-400 ">Sinon c'est inutile...</div>
+
+                                        <div class="form-icon relative mt-2">
+                                            <i data-feather="message-circle" class="w-4 h-4 absolute top-3 left-4"></i>
+                                            <textarea name="comments" id="comments" class="form-input pl-11 h-28"
+                                                placeholder="Salut Bastien,"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" id="submit" name="send"
+                                    class="btn bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white rounded-md justify-center flex items-center">Envoyer
+                                    ce message</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- End Section-->
+
+    <!--end container-->
+
+    @@include("partials/footer/footer-two.html")
+
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top"
+        class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center bg-emerald-600 text-white leading-9"><i
+            class="uil uil-arrow-up"></i></a>
+    <!-- Back to top -->
+
+    @@include("partials/switcher.html")
+
+    <!-- JAVASCRIPTS -->
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/libs/tobii/js/tobii.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    @@include("partials/script-file.html")
+    <!-- JAVASCRIPTS -->
+</body>
+
+</html>

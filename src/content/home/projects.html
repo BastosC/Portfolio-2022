@@ -1,0 +1,181 @@
+<section class="relative md:py-16 py-12 bg-gray-50">
+    <div class="container">
+
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Tous mes projets</h3>
+
+            <p class="text-slate-400 max-w-xl mx-auto">Start working with Techwind that can provide everything you need
+                to generate awareness, drive traffic, connect.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 grid-cols-1" id="reserve-form">
+            <div class="lg:col-start-2 lg:col-span-10">
+                <div class="bg-white dark:bg-slate-900 border-0 shadow dark:shadow-gray-700 rounded p-3 mb-12">
+                    <form action="#">
+                        <div class="registration-form text-dark text-start">
+                            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-6">
+                                <div class="filter-search-form relative filter-border">
+                                    <i class="uil uil-search icons"></i>
+                                    <input name="name" type="text" id="job-keyword"
+                                        class="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0"
+                                        placeholder="Titre, description ...">
+                                </div>
+
+                                <div class="filter-search-form relative filter-border">
+                                    <i class="uil uil-code-branch icons"></i>
+                                    <select class="form-select" data-trigger name="choices-location"
+                                        id="choices-location">
+                                        <option value="">Technologie</option>
+                                        <option value="AF">Tailwind css </option>
+                                        <option value="AF">Scss </option>
+                                        <option value="AF">React.js </option>
+                                        <option value="AF">Wordpress </option>
+                                        <option value="AF">Three.js </option>
+                                        <option value="AF">Adobe Xd </option>
+                                        <option value="AF">Next.js</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="filter-search-form relative filter-border">
+                                    <i class="uil uil-briefcase-alt icons"></i>
+                                    <select class="form-select " data-trigger name="choices-type" id="choices-type"
+                                        aria-label="Default select example">
+                                        <option value="">Caractéristiques</option>
+                                        <option value="1">En production</option>
+                                        <option value="1">Essai</option>
+                                    </select>
+                                </div>
+
+                                <input type="submit" id="search" name="search" style="height: 60px;"
+                                    class="btn rounded cursor-pointer bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white searchbtn submit-btn w-100"
+                                    value="Rechercher">
+                            </div>
+                            <!--end grid-->
+                        </div>
+                        <!--end container-->
+                    </form>
+                </div>
+            </div>
+            <!--ed col-->
+        </div>
+        <!--grid-->
+    </div>
+    <!--end container-->
+
+    <div class="container">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-[30px] cursor-pointer">
+            <div class="bg-white rounded-md shadow dark:shadow-gray-700">
+                <div class="p-6">
+                    <a href="page-job-detail.html" class="title h5 text-lg font-semibold hover:text-emerald-600">Cortex
+                        -
+                        Vulgarisation scientifique</a>
+                    <p class="text-slate-400 mt-2 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <g fill="none" stroke="rgb(148 163 184)" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2">
+                                <rect width="20" height="18" x="2" y="4" rx="4" />
+                                <path d="M8 2v4m8-4v4M2 10h20" />
+                            </g>
+                        </svg>
+                        <span class="ml-1 mt-1 text-xs"> Mai 2022</span>
+                    </p>
+
+                    <div class="flex justify-between items-center mt-4">
+                        <div class="flex flex-wrap">
+                            <span
+                                class="bg-emerald-600/5 text-emerald-600 hover:text-white hover:bg-emerald-600 duration-500  text-xs font-bold px-2.5 py-0.5 rounded h-5">Projet</span>
+                        </div>
+                        <div class="flex items-center ">
+                            <a href="" class="btn px-2 btn-link text-emerald-600 hover:text-emerald-600 after:bg-emerald-600 duration-500
+                            ease-in-out"><i class="uil uil-github text-emerald-600"></i></a>
+                            <a href=""
+                                class="btn btn-link text-emerald-600 hover:text-emerald-600 after:bg-emerald-600 duration-500 ease-in-out"><i
+                                    class="uil uil-link text-emerald-600"></i> Lien
+                                démo<i class="uil uil-arrow-right align-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center px-6 py-3 border-t dark:border-gray-700">
+
+                    <div
+                        class="flex items-center justify-center h-12 mr-4 w-12 shadow-md hover:bg-emerald-600 duration-500 dark:shadow-gray-700 rounded-md p-1 bg-white dark:bg-slate-900">
+                        @@include("../../icons/icon-next.html")
+                    </div>
+                    <div
+                        class="flex items-center justify-center h-12 mr-4 w-12 shadow-md hover:bg-emerald-600 duration-500 dark:shadow-gray-700 rounded-md p-1 bg-white dark:bg-slate-900">
+                        @@include("../../icons/icon-react.html")
+                    </div>
+
+                    <!-- 
+                    <img src="assets/images/client/facebook-logo-2019.png"
+                        class="h-12 mr-4 w-12 shadow-md hover:bg-emerald-600 duration-500 dark:shadow-gray-700 rounded-md p-2 bg-white dark:bg-slate-900"
+                        alt="">
+                    <img src="assets/images/client/facebook-logo-2019.png"
+                        class="h-12 mr-4 w-12 shadow-md hover:bg-emerald-600 duration-500 dark:shadow-gray-700 rounded-md p-2 bg-white dark:bg-slate-900"
+                        alt=""> -->
+
+                </div>
+            </div>
+            <div class="bg-white rounded-md shadow dark:shadow-gray-700">
+                <div class="p-6">
+                    <a href="page-job-detail.html" class="title h5 text-lg font-semibold hover:text-emerald-600">Cortex
+                        -
+                        Vulgarisation scientifique</a>
+                    <p class="text-slate-400 mt-2 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <g fill="none" stroke="rgb(148 163 184)" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2">
+                                <rect width="20" height="18" x="2" y="4" rx="4" />
+                                <path d="M8 2v4m8-4v4M2 10h20" />
+                            </g>
+                        </svg>
+                        <span class="ml-1 mt-1 text-xs"> Mai 2022</span>
+                    </p>
+
+                    <div class="flex justify-between items-center mt-4">
+                        <div class="flex flex-wrap">
+                            <span
+                                class="bg-emerald-600/5 text-emerald-600 hover:text-white hover:bg-emerald-600 duration-500  text-xs font-bold px-2.5 py-0.5 rounded h-5">Projet</span>
+                        </div>
+
+                        <a href=""
+                            class="btn btn-link text-emerald-600 hover:text-emerald-600 after:bg-emerald-600 duration-500 ease-in-out"><i
+                                class="uil uil-link text-emerald-600"></i> Lien
+                            démo<i class="uil uil-arrow-right align-middle"></i></a>
+                    </div>
+                </div>
+
+                <div class="flex items-center px-6 py-3 border-t dark:border-gray-700">
+
+                    <div
+                        class="flex items-center justify-center h-12 mr-4 w-12 shadow-md hover:bg-emerald-600 duration-500 dark:shadow-gray-700 rounded-md p-1 bg-white dark:bg-slate-900">
+                        @@include("../../icons/icon-next.html")
+                    </div>
+                    <div
+                        class="flex items-center justify-center h-12 mr-4 w-12 shadow-md hover:bg-emerald-600 duration-500 dark:shadow-gray-700 rounded-md p-1 bg-white dark:bg-slate-900">
+                        @@include("../../icons/icon-react.html")
+                    </div>
+
+                    <!-- 
+                    <img src="assets/images/client/facebook-logo-2019.png"
+                        class="h-12 mr-4 w-12 shadow-md hover:bg-emerald-600 duration-500 dark:shadow-gray-700 rounded-md p-2 bg-white dark:bg-slate-900"
+                        alt="">
+                    <img src="assets/images/client/facebook-logo-2019.png"
+                        class="h-12 mr-4 w-12 shadow-md hover:bg-emerald-600 duration-500 dark:shadow-gray-700 rounded-md p-2 bg-white dark:bg-slate-900"
+                        alt=""> -->
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--end container-->
+
+
+    <!--end container-->
+</section>
