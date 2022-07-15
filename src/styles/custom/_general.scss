@@ -1,0 +1,33 @@
+/* // _general.scss */
+
+/*********************************/
+/*             General            */
+/*===============================*/
+p {
+  @apply leading-relaxed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @apply font-nunito leading-normal;
+}
+
+::selection {
+  @apply bg-emerald-600/90 text-white;
+}
+
+.img-container {
+  & > span {
+    width: 100% !important;
+  }
+}

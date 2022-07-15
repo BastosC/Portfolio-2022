@@ -2,23 +2,39 @@
   "name": "newportfolio",
   "version": "0.1.0",
   "private": true,
+  "main": "tailwind.config.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build-css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w"
   },
   "dependencies": {
+    "firebase": "^9.8.2",
+    "gsap": "^3.10.4",
     "next": "12.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-gsap": "^3.2.1",
+    "react-parallax-tilt": "^1.7.42",
+    "react-share": "^4.4.0",
+    "react-tsparticles": "^1.18.11",
+    "swiper": "^8.1.4"
   },
   "devDependencies": {
-    "@types/node": "18.0.3",
-    "@types/react": "18.0.15",
-    "@types/react-dom": "18.0.6",
+    "@next/bundle-analyzer": "^12.1.6",
+    "@svgr/webpack": "^6.2.1",
+    "autoprefixer": "^10.4.7",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.1",
-    "typescript": "4.7.4"
+    "file-loader": "^6.2.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-images": "^1.8.4",
+    "postcss": "^8.4.14",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.12",
+    "sass": "^1.53.0",
+    "tailwindcss": "^3.1.5"
   }
 }
