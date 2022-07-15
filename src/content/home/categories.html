@@ -1,137 +1,185 @@
-<section class="relative md:py-24 py-16">
-    <div class="container">
-        <div class="grid md:grid-cols-12 grid-cols-1 pb-8 items-end">
-            <div class="lg:col-span-8 md:col-span-6 md:text-left text-center">
-                <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Ma stack principale
-                </h3>
-                <p class="text-slate-400 max-w-xl">Voici les technologies que je maitrise le plus.<br /> J'ai bien sûr
-                    également
-                    travaillé et essayé plusieurs autres technologies.</p>
-            </div>
+<section class="container md:mt-24 mt-16 md:mb-24 mb-16">
 
-            <div class="lg:col-span-4 md:col-span-6 md:text-right hidden md:block">
-                <a href=""
-                    class="btn btn-link text-slate-400 hover:text-emerald-600 after:bg-emerald-600 duration-500 ease-in-out">Voir
-                    toutes les technologies <i class="uil uil-arrow-right align-middle rotate-90"></i></a>
+    <!--end grid-->
+
+    <div class="grid grid-cols-1 items-center mt-8">
+        <div class="filters-group-wrap text-center">
+            <div class="filters-group">
+                <ul class="mb-0 list-none container-filter filter-options">
+                    <li class="inline-block font-medium text-2xl mx-2 mb-3 cursor-pointer relative text-slate-400 transition duration-500 active"
+                        data-group="all">Tous</li>
+                    <li class="inline-block font-medium text-2xl mx-2 mb-3 cursor-pointer relative text-slate-400 transition duration-500"
+                        data-group="monday">Front-end</li>
+                    <li class="inline-block font-medium text-2xl mx-2 mb-3 cursor-pointer relative text-slate-400 transition duration-500"
+                        data-group="tuesday">Back-end</li>
+                    <li class="inline-block font-medium text-2xl mx-2 mb-3 cursor-pointer relative text-slate-400 transition duration-500"
+                        data-group="wednesday">UX Design</li>
+                    <li class="inline-block font-medium text-2xl mx-2 mb-3 cursor-pointer relative text-slate-400 transition duration-500"
+                        data-group="thursday">Gestion de projet</li>
+
+                </ul>
             </div>
         </div>
-        <!--end grid-->
     </div>
-    <!--end container-->
+    <!--grid-->
 
-    <div class="container">
-        <div class="grid grid-cols-1 relative">
-            <div class="tiny-five-item">
-                <div class="cursor-pointer tiny-slide ">
-                    <div
-                        class="px-3 py-10 rounded-md shadow dark:shadow-gray-700 group text-center bg-white dark:bg-slate-900 hover:bg-emerald-600/5 dark:hover:bg-emerald-600/5 transition duration-500 m-2">
-                        <div
-                            class="w-[84px] h-[84px] bg-emerald-600/5 group-hover:bg-emerald-200 text-emerald-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-700 transition duration-500 mx-auto">
-                            @@include("../../icons/icon-next.html")
-                        </div>
-
-                        <div class="content mt-6">
-                            <a href="page-job-grid.html"
-                                class="title h5 text-lg font-medium hover:text-emerald-600">Next.js</a>
-                            <p class="text-slate-400 mt-3">74 Jobs</p>
-                        </div>
-                    </div>
+    <div id="grid" class="md:flex justify-center mx-auto mt-4 shuffle"
+        style="position: relative; overflow: hidden; height: 442px; transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;">
+        <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4 shuffle-item shuffle-item--visible"
+            data-groups="[&quot;monday&quot;, &quot;wednesday&quot;, &quot;friday&quot;]"
+            style="position: absolute; top: 0px; visibility: visible; will-change: transform; left: 0px; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity; transform: translate(0px) scale(1);">
+            <div class="text-center p-6 shadow dark:shadow-gray-700 rounded-md">
+                <div class="h-16 w-16 mx-auto">
+                    @@include("../../icons/icon-tailwind.html")
                 </div>
 
-                <div class="cursor-pointer tiny-slide ">
-                    <div
-                        class="px-3 py-10 rounded-md shadow dark:shadow-gray-700 group text-center bg-white dark:bg-slate-900 hover:bg-emerald-600/5 dark:hover:bg-emerald-600/5 transition duration-500 m-2">
-                        <div
-                            class="w-[84px] h-[84px] bg-emerald-600/5 group-hover:bg-emerald-200 text-emerald-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-700 transition duration-500 mx-auto">
-                            @@include("../../icons/icon-react.html")
-                        </div>
-
-                        <div class="content mt-6">
-                            <a href="page-job-grid.html"
-                                class="title h5 text-lg font-medium hover:text-emerald-600">React.js</a>
-                            <p class="text-slate-400 mt-3">20 Jobs</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cursor-pointer tiny-slide">
-                    <div
-                        class="px-3 py-10 rounded-md shadow dark:shadow-gray-700 group text-center bg-white dark:bg-slate-900 hover:bg-emerald-600/5 dark:hover:bg-emerald-600/5 transition duration-500 m-2">
-                        <div
-                            class="w-[84px] h-[84px] bg-emerald-600/5 group-hover:bg-emerald-200 text-emerald-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-700 transition duration-500 mx-auto">
-                            @@include("../../icons/icon-wordpress.html")
-                        </div>
-
-                        <div class="content mt-6">
-                            <a href="page-job-grid.html"
-                                class="title h5 text-lg font-medium hover:text-emerald-600">Wordpress</a>
-                            <p class="text-slate-400 mt-3">35 Jobs</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cursor-pointer tiny-slide">
-                    <div
-                        class="px-3 py-10 rounded-md shadow dark:shadow-gray-700 group text-center bg-white dark:bg-slate-900 hover:bg-emerald-600/5 dark:hover:bg-emerald-600/5 transition duration-500 m-2">
-                        <div
-                            class="w-[84px] h-[84px] bg-emerald-600/5 group-hover:bg-emerald-200 text-emerald-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-700 transition duration-500 mx-auto">
-                            @@include("../../icons/icon-adobe-xd.html")
-
-                        </div>
-
-                        <div class="content mt-6">
-                            <a href="page-job-grid.html"
-                                class="title h5 text-lg font-medium hover:text-emerald-600">Adobe XD</a>
-                            <p class="text-slate-400 mt-3">46 Jobs</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cursor-pointer tiny-slide">
-                    <div
-                        class="px-3 py-10 rounded-md shadow dark:shadow-gray-700 group text-center bg-white dark:bg-slate-900 hover:bg-emerald-600/5 dark:hover:bg-emerald-600/5 transition duration-500 m-2">
-                        <div
-                            class="w-[84px] h-[84px] bg-emerald-600/5 group-hover:bg-emerald-200 text-emerald-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-700 transition duration-500 mx-auto">
-                            @@include("../../icons/icon-three.html")
-
-                        </div>
-
-                        <div class="content mt-6">
-                            <a href="page-job-grid.html" class="title h5 text-lg font-medium hover:text-emerald-600">
-                                Three.js</a>
-                            <p class="text-slate-400 mt-3">60 Jobs</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cursor-pointer tiny-slide">
-                    <div
-                        class="px-3 py-10 rounded-md shadow dark:shadow-gray-700 group text-center bg-white dark:bg-slate-900 hover:bg-emerald-600/5 dark:hover:bg-emerald-600/5 transition duration-500 m-2">
-                        <div
-                            class="w-[84px] h-[84px] bg-emerald-600/5 group-hover:bg-emerald-200 text-emerald-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-700 transition duration-500 mx-auto">
-                            @@include("../../icons/icon-tailwind.html")
-
-                        </div>
-
-                        <div class="content mt-6">
-                            <a href="page-job-grid.html"
-                                class="title h5 text-lg font-medium hover:text-emerald-600">Tailwind css</a>
-                            <p class="text-slate-400 mt-3">05 Jobs</p>
-                        </div>
-                    </div>
+                <div class="content mt-6">
+                    <h5 class="font-semibold text-lg">Tailwind</h5>
+                    <small class="text-slate-400 mb-0">3 Projets</small>
                 </div>
             </div>
         </div>
-        <!--grid-->
+        <!--end col-->
 
-        <div class="grid md:grid-cols-12 grid-cols-1 md:hidden mt-8">
-            <div class="md:col-span-12 text-center">
-                <a href=""
-                    class="btn btn-link text-slate-400 hover:text-emerald-600 after:bg-emerald-600 duration-500 ease-in-out">All
-                    Categories <i class="uil uil-arrow-right align-middle"></i></a>
+        <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4 shuffle-item shuffle-item--visible"
+            data-groups="[&quot;monday&quot;, &quot;wednesday&quot;, &quot;friday&quot;]"
+            style="position: absolute; top: 0px; visibility: visible; will-change: transform; left: 0px; opacity: 1; transform: translate(187px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+            <div class="text-center p-6 shadow dark:shadow-gray-700 rounded-md">
+                <img src="assets/images/gym/icon/chest-expander.png" class="h-16 w-16 mx-auto" alt="">
+
+                <div class="content mt-6">
+                    <h5 class="font-semibold text-lg">Next.js</h5>
+                    <small class="text-slate-400 mb-0">07AM - 08AM</small>
+                </div>
             </div>
         </div>
-        <!--end grid-->
+        <!--end col-->
+
+        <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4 shuffle-item shuffle-item--visible"
+            data-groups="[&quot;tuesday&quot;, &quot;thursday&quot;, &quot;saturday&quot;]"
+            style="position: absolute; top: 0px; visibility: visible; will-change: transform; left: 0px; opacity: 1; transform: translate(373px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+            <div class="text-center p-6 shadow dark:shadow-gray-700 rounded-md">
+                <img src="assets/images/gym/icon/dumbbell.png" class="h-16 w-16 mx-auto" alt="">
+
+                <div class="content mt-6">
+                    <h5 class="font-semibold text-lg">Bench Press</h5>
+                    <small class="text-slate-400 mb-0">08AM - 09AM</small>
+                </div>
+            </div>
+        </div>
+        <!--end col-->
+
+        <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4 shuffle-item shuffle-item--visible"
+            data-groups="[&quot;monday&quot;, &quot;wednesday&quot;, &quot;friday&quot;]"
+            style="position: absolute; top: 0px; visibility: visible; will-change: transform; left: 0px; opacity: 1; transform: translate(560px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+            <div class="text-center p-6 shadow dark:shadow-gray-700 rounded-md">
+                <img src="assets/images/gym/icon/gymnastic-rings.png" class="h-16 w-16 mx-auto" alt="">
+
+                <div class="content mt-6">
+                    <h5 class="font-semibold text-lg">Dumbbell</h5>
+                    <small class="text-slate-400 mb-0">09AM - 10AM</small>
+                </div>
+            </div>
+        </div>
+        <!--end col-->
+
+        <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4 shuffle-item shuffle-item--visible"
+            data-groups="[&quot;tuesday&quot;, &quot;thursday&quot;, &quot;saturday&quot;]"
+            style="position: absolute; top: 0px; visibility: visible; will-change: transform; left: 0px; opacity: 1; transform: translate(747px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+            <div class="text-center p-6 shadow dark:shadow-gray-700 rounded-md">
+                <img src="assets/images/gym/icon/hand-grip.png" class="h-16 w-16 mx-auto" alt="">
+
+                <div class="content mt-6">
+                    <h5 class="font-semibold text-lg">Pushups</h5>
+                    <small class="text-slate-400 mb-0">11AM - 12PM</small>
+                </div>
+            </div>
+        </div>
+        <!--end col-->
+
+        <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4 shuffle-item shuffle-item--visible"
+            data-groups="[&quot;monday&quot;, &quot;wednesday&quot;, &quot;friday&quot;]"
+            style="position: absolute; top: 0px; visibility: visible; will-change: transform; left: 0px; opacity: 1; transform: translate(933px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+            <div class="text-center p-6 shadow dark:shadow-gray-700 rounded-md">
+                <img src="assets/images/gym/icon/skipping-rope.png" class="h-16 w-16 mx-auto" alt="">
+
+                <div class="content mt-6">
+                    <h5 class="font-semibold text-lg">Chest</h5>
+                    <small class="text-slate-400 mb-0">05PM - 06PM</small>
+                </div>
+            </div>
+        </div>
+        <!--end col-->
+
+        <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4 shuffle-item shuffle-item--visible"
+            data-groups="[&quot;tuesday&quot;, &quot;thursday&quot;, &quot;saturday&quot;]"
+            style="position: absolute; top: 0px; visibility: visible; will-change: transform; left: 0px; opacity: 1; transform: translate(0px, 221px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+            <div class="text-center p-6 shadow dark:shadow-gray-700 rounded-md">
+                <img src="assets/images/gym/icon/kettlebell.png" class="h-16 w-16 mx-auto" alt="">
+
+                <div class="content mt-6">
+                    <h5 class="font-semibold text-lg">Kettlebell</h5>
+                    <small class="text-slate-400 mb-0">06PM - 07PM</small>
+                </div>
+            </div>
+        </div>
+        <!--end col-->
+
+        <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4 shuffle-item shuffle-item--visible"
+            data-groups="[&quot;monday&quot;, &quot;wednesday&quot;, &quot;friday&quot;]"
+            style="position: absolute; top: 0px; visibility: visible; will-change: transform; left: 0px; opacity: 1; transform: translate(187px, 221px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+            <div class="text-center p-6 shadow dark:shadow-gray-700 rounded-md">
+                <img src="assets/images/gym/icon/man.png" class="h-16 w-16 mx-auto" alt="">
+
+                <div class="content mt-6">
+                    <h5 class="font-semibold text-lg">Pullup</h5>
+                    <small class="text-slate-400 mb-0">07PM - 08PM</small>
+                </div>
+            </div>
+        </div>
+        <!--end col-->
+
+        <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4 shuffle-item shuffle-item--visible"
+            data-groups="[&quot;tuesday&quot;, &quot;thursday&quot;, &quot;saturday&quot;]"
+            style="position: absolute; top: 0px; visibility: visible; will-change: transform; left: 0px; opacity: 1; transform: translate(373px, 221px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+            <div class="text-center p-6 shadow dark:shadow-gray-700 rounded-md">
+                <img src="assets/images/gym/icon/pool.png" class="h-16 w-16 mx-auto" alt="">
+
+                <div class="content mt-6">
+                    <h5 class="font-semibold text-lg">Biceps</h5>
+                    <small class="text-slate-400 mb-0">08PM - 09PM</small>
+                </div>
+            </div>
+        </div>
+        <!--end col-->
+
+        <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4 shuffle-item shuffle-item--visible"
+            data-groups="[&quot;monday&quot;, &quot;wednesday&quot;, &quot;friday&quot;]"
+            style="position: absolute; top: 0px; visibility: visible; will-change: transform; left: 0px; opacity: 1; transform: translate(560px, 221px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+            <div class="text-center p-6 shadow dark:shadow-gray-700 rounded-md">
+                <img src="assets/images/gym/icon/punching-bag-2.png" class="h-16 w-16 mx-auto" alt="">
+
+                <div class="content mt-6">
+                    <h5 class="font-semibold text-lg">Triceps</h5>
+                    <small class="text-slate-400 mb-0">09PM - 10PM</small>
+                </div>
+            </div>
+        </div>
+        <!--end col-->
+
+        <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4 shuffle-item shuffle-item--visible"
+            data-groups="[&quot;tuesday&quot;, &quot;thursday&quot;, &quot;saturday&quot;]"
+            style="position: absolute; top: 0px; visibility: visible; will-change: transform; left: 0px; opacity: 1; transform: translate(747px, 221px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+            <div class="text-center p-6 shadow dark:shadow-gray-700 rounded-md">
+                <img src="assets/images/gym/icon/punching-bag.png" class="h-16 w-16 mx-auto" alt="">
+
+                <div class="content mt-6">
+                    <h5 class="font-semibold text-lg">Legs</h5>
+                    <small class="text-slate-400 mb-0">11PM - 12AM</small>
+                </div>
+            </div>
+        </div>
+        <!--end col-->
     </div>
-    <!--end container-->
+    <!--end grid-->
 </section>
